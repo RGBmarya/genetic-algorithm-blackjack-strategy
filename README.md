@@ -1,5 +1,5 @@
 # genetic-algorithm-blackjack-strategy
-UCI COSMOS 2021 - Optimization of Blackjack Strategy through a Genetic Algorithm
+UCI COSMOS 2021 - Optimization of Blackjack Strategy through a Genetic Algorithm:
 Mihir Arya, Sharon Chen, Jacob Parmacek, Anirudh Raja, Amratha Rao
 
 **Abstract**
