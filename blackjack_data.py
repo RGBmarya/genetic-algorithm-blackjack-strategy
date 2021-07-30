@@ -219,7 +219,7 @@ def blackjack(n):
     return match_info_table
 
 
-path = r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\bj_results.npy"
+path = ""
 
 np.save(path, blackjack(10000000))
 print("done")
