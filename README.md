@@ -2,6 +2,24 @@
 UCI COSMOS 2021 - Optimization of Blackjack Strategy through a Genetic Algorithm:
 Mihir Arya, Sharon Chen, Jacob Parmacek, Anirudh Raja, Amratha Rao
 
+Instructions
+
+	1. Run blackjack_data.py - obtain random game data
+		i. Edit file path on line 222
+		ii. Edit argument on line 224 to change number of blackjack games simulated
+	2. Run genetic_algorithm.py - create optimal strategy table
+		i. Edit file path on line 33 (same file path as 1.i.)
+		ii. Edit file path on line 216
+	3. Run blackjack_plot.py - simulate games and plot game data (optimal strategy table vs. dealer)
+		i. Edit file path on line 13 (same file path as 2.ii.)
+		ii. Edit file paths on line 213, line 217, and line 235
+		iii. Edit argument on line 257 to change number of blackjack games simulated
+	
+	
+
+
+
+
 **Abstract**
 
 	With high risks and gambling, Blackjack is one of many calculative card games out there. 
