@@ -4,13 +4,13 @@ Mihir Arya, Sharon Chen, Jacob Parmacek, Anirudh Raja, Amratha Rao
 
 **Abstract**
 
-  With high risks and gambling, Blackjack is one of many calculative card games out there. With tensions running high between the dealer and the players, decisions and uncertainties remain constant throughout the rounds. In 1960, Edward O. Thorp, a professor and mathematician at UC Irvine and Blackjack strategist, released the optimal strategy for Blackjack in his book Beat the Dealer. This strategy outlines rules and moves to create the most ideal play for the participants. However, with the rise of AI and Machine learning, the hopes of there being a truly superior strategy have arisen. How can a player maximize their wins in Blackjack through AI? Can the Thorp’s Basic Strategy Table be replicated or improved through machine learning? Can Genetic Algorithms provide constructive results?  By developing a Blackjack strategy through a genetic algorithm, this project offers detailed comparisons between Thorp’s Basic Strategy, the Random Strategy, and the Genetic Algorithm, ultimately concluding a Genetic Algorithm can produce close results to Thorp’s Basic Strategy given sufficient time and compute power.
+	With high risks and gambling, Blackjack is one of many calculative card games out there. With tensions running high between the dealer and the players, decisions and uncertainties remain constant throughout the rounds. In 1960, Edward O. Thorp, a professor and mathematician at UC Irvine and Blackjack strategist, released the optimal strategy for Blackjack in his book Beat the Dealer. This strategy outlines rules and moves to create the most ideal play for the participants. However, with the rise of AI and Machine learning, the hopes of there being a truly superior strategy have arisen. How can a player maximize their wins in Blackjack through AI? Can the Thorp’s Basic Strategy Table be replicated or improved through machine learning? Can Genetic Algorithms provide constructive results?  By developing a Blackjack strategy through a genetic algorithm, this project offers detailed comparisons between Thorp’s Basic Strategy, the Random Strategy, and the Genetic Algorithm, ultimately concluding a Genetic Algorithm can produce close results to Thorp’s Basic Strategy given sufficient time and compute power.
 
 
 
 **Introduction**
 
-  Blackjack
+ 	Blackjack
     Players try to acquire cards with a value as close to 21 as possible without going over
     Players can “hit” (receive a card) or “stand” (yield turn)
     House Rules: Dealer must hit on a hard 17 or more
@@ -18,7 +18,7 @@ Mihir Arya, Sharon Chen, Jacob Parmacek, Anirudh Raja, Amratha Rao
 Basic Strategy Table
   https://images-na.ssl-images-amazon.com/images/I/816DFf5i0EL.jpg 
 
-  Genetic Algorithm
+ 	Genetic Algorithm
     Initial population - Set of solutions to a problem
     Fitness function - Determines how fit a solution is in comparison to other solutions
     Selection - Pair of fittest solutions are selected 
@@ -37,10 +37,10 @@ Basic Strategy Table
 
 **Methods**
 
-  Obtain Game Data
+ 	Obtain Game Data
     Simulated ten million Blackjack games with a randomized strategy (equal chance to hit or stand) to obtain game data (hand, decision, upcard, outcome, etc.)
 
-  Genetic Algorithm
+ 	Genetic Algorithm
     Used genetic algorithm and game data to create strategy table row-by-row 
     17 populations, each with 20 random rows of length 10 (each population corresponds to hard total)
     Fitness of row in population ∝ probability of winning given current row 
