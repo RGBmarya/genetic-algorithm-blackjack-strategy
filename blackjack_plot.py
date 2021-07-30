@@ -10,7 +10,7 @@ key = {
     13: "K"
 }
 
-with open(r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\optimal_table.npy", 'rb') as f:
+with open("", 'rb') as f:
     strat_matrix = np.load(f, allow_pickle=True)
 print("Current Strategy Table: ")
 print(strat_matrix)
@@ -210,11 +210,11 @@ def blackjack(n):
         if [p for p in poss_win if has_blackjack(p[0])]:
             poss_win = [p for p in poss_win if has_blackjack(p[0])]
         if len(poss_win) == 1:
-            with open(r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\bj_results_random.txt", "a") as f:
+            with open("", "a") as f:
                 f.write(
                     f"{[[1 if poss_win[0][0] == p1 else 0], [1 if p1.busted else 0], player_totals, player_choice, dealer_upcard, dealer_totals, dealer_choice]}\n")
         elif len(poss_win) == 2:
-            with open(r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\bj_results_random.txt", "a") as f:
+            with open("", "a") as f:
                 f.write(
                     f"{[[2], [1 if p1.busted else 0], player_totals, player_choice, dealer_upcard, dealer_totals, dealer_choice]}\n")
 
@@ -232,7 +232,7 @@ def blackjack(n):
     ties = 0
     num_sims = 0
 
-    with open(r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\bj_results_random.txt", "r") as f:
+    with open("", "r") as f:
         for line in f:
             if int(line[2]) == 1:
                 player_wins += 1
