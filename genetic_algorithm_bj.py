@@ -16,13 +16,6 @@ import numpy as np
 
 final_table = []
 
-
-path = r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\bj_results.npy"
-
-with open(path, 'rb') as f:
-    game_data = np.load(f, allow_pickle=True)
-
-
 class Individual:
 
     def __init__(self, player_hard_total):
@@ -37,7 +30,7 @@ class Individual:
     # Calculate and update fitness of individual
 
     def calc_fitness(self):
-        path = r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\bj_results.npy"
+        path = ""
         with open(path, 'rb') as f:
             game_data = np.load(f, allow_pickle=True)
 
@@ -220,5 +213,5 @@ for ht in range(4, 21):
     print(f"Fitness: {population.max_fitness}\n")
 
 final_table = np.asarray(final_table)
-np.save(r"G:\Users\Mihir Gaming PC\Documents\programming\python\blackjack\optimal_table.npy", final_table)
+np.save("", final_table)
 print(final_table)
